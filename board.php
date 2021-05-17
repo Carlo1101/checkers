@@ -79,6 +79,7 @@
                         ?>
                             <div class='<?php echo $tile_class; ?>' id='<?php echo $letters[$r] . $c ; ?>'>
                                 <?php
+                                    echo "<p>" . $letters[$r] . $c . "</p>";
                                     if($tile_class == 'black-tile' && in_array($letters[$r], $letters_top)){
                                         echo '<div class="red-chip"></div>';
                                     }else if($tile_class == 'black-tile' && in_array($letters[$r], $letters_bottom)){
